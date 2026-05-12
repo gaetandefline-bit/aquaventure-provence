@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaVenture Provence - Activités Loisirs à Fontaine-de-Vaucluse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230066cc'/%3E%3Cpath d='M30 50 Q50 30 70 50' stroke='white' stroke-width='3' fill='none'/%3E%3Cpath d='M25 60 Q50 40 75 60' stroke='%2300a3ff' stroke-width='2' fill='none'/%3E%3Ctext x='50' y='75' text-anchor='middle' fill='white' font-size='20' font-weight='bold'%3EAV%3C/text%3E%3C/svg%3E" alt="Logo AquaVenture" class="logo">
+                <span class="brand-name">AquaVenture</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="kayak.html">Kayak</a></li>
+                <li><a href="trottinettes.html">Trottinettes</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vivez l'aventure au fil de l'eau !</h1>
+            <p>Explorez Fontaine-de-Vaucluse avec nos activités de loisirs nature</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Réserver maintenant</a>
+        </div>
+        <div class="hero-background">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+    </section>
+
+    <!-- ACTIVITÉS RAPIDES -->
+    <section class="quick-activities">
+        <div class="container">
+            <h2>Nos Activités Principales</h2>
+            <div class="activities-grid">
+                <!-- KAYAK -->
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Balades en Kayak</h3>
+                    <p>Explorez les eaux cristallines de Fontaine-de-Vaucluse</p>
+                    <div class="activity-highlight">À partir de <strong>28 €</strong></div>
+                    <a href="kayak.html" class="btn btn-secondary">Découvrir</a>
+                </div>
+
+                <!-- TROTTINETTES -->
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Trottinettes Électriques</h3>
+                    <p>Parcourez la région de manière écologique et amusante</p>
+                    <div class="activity-highlight">À partir de <strong>20 €</strong></div>
+                    <a href="trottinettes.html" class="btn btn-secondary">Découvrir</a>
+                </div>
+
+                <!-- EXCURSIONS -->
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Excursions Guidées</h3>
+                    <p>Découvrez les secrets naturels avec nos guides experts</p>
+                    <div class="activity-highlight">À partir de <strong>35 €</strong></div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULE SPÉCIALE -->
+    <section class="special-offer">
+        <div class="container">
+            <div class="offer-card">
+                <div class="offer-badge">OFFRE SPÉCIALE</div>
+                <h2>Formule Après-Midi Kayak</h2>
+                <p class="offer-price">28 €</p>
+                <ul class="offer-includes">
+                    <li><i class="fas fa-check"></i> Kayak et pagaie fournis</li>
+                    <li><i class="fas fa-check"></i> Gilet de sauvetage inclus</li>
+                    <li><i class="fas fa-check"></i> Goûter local offert</li>
+                    <li><i class="fas fa-check"></i> Balade guidée (2h)</li>
+                    <li><i class="fas fa-check"></i> Paysages naturels spectaculaires</li>
+                </ul>
+                <a href="kayak.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+            <div class="offer-image">
+                <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <i class="fas fa-kayak"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE IMMERSIVE -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Galerie Immersive</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Kayak en Eaux Claires</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Paysages Naturels</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Aventure Aquatique</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <h3>Trottinette Nature</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <h3>Couchers de Soleil</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <h3>Exploration Groupe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS STYLE GOOGLE MAPS -->
+    <section class="reviews">
+        <div class="container">
+            <h2>Ce que disent nos clients</h2>
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">MC</div>
+                        <div class="review-info">
+                            <h4>Marie Clément</h4>
+                            <p>Famille de Paris</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Une journée inoubliable en kayak ! Les enfants ont adoré et l'équipe était très professionnelle. Je recommande vivement !"</p>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">LB</div>
+                        <div class="review-info">
+                            <h4>Luc Besson</h4>
+                            <p>Groupe d'amis</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Les trottinettes électriques, c'est du pur plaisir ! Parcours magnifique avec des paysages à couper le souffle."</p>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">SA</div>
+                        <div class="review-info">
+                            <h4>Sophie Arnould</h4>
+                            <p>Touriste Solo</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Accueil chaleureux et activités parfaitement organisées. Un moment de détente total au cœur de la nature."</p>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">PD</div>
+                        <div class="review-info">
+                            <h4>Pierre Dupont</h4>
+                            <p>Couple</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Tarifs très compétitifs et qualité de service impeccable. Nous reviendrons avec nos amis !"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à vivre l'aventure ?</h2>
+            <p>Rejoignez des milliers de touristes satisfaits</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Réserver une activité</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AquaVenture Provence</h4>
+                    <p>Vivez l'aventure au fil de l'eau !</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Activités</h4>
+                    <ul>
+                        <li><a href="kayak.html">Kayak</a></li>
+                        <li><a href="trottinettes.html">Trottinettes</a></li>
+                        <li><a href="contact.html">Réservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)4 90 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@aquaventure.fr</p>
+                    <p><i class="fas fa-map-marker"></i> Fontaine-de-Vaucluse, France</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AquaVenture Provence. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

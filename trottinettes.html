@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trottinettes Électriques - AquaVenture Provence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230066cc'/%3E%3Cpath d='M30 50 Q50 30 70 50' stroke='white' stroke-width='3' fill='none'/%3E%3Cpath d='M25 60 Q50 40 75 60' stroke='%2300a3ff' stroke-width='2' fill='none'/%3E%3Ctext x='50' y='75' text-anchor='middle' fill='white' font-size='20' font-weight='bold'%3EAV%3C/text%3E%3C/svg%3E" alt="Logo AquaVenture" class="logo">
+                <span class="brand-name">AquaVenture</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="kayak.html">Kayak</a></li>
+                <li><a href="trottinettes.html" class="active">Trottinettes</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <div class="container">
+            <h1>Trottinettes Électriques</h1>
+            <p>Explorez la région de façon écologique et amusante</p>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="section-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>L'Aventure Écologique Moderne</h2>
+                <p>Découvrez Fontaine-de-Vaucluse et ses alentours en trottinette électrique ! Une façon moderne, écologique et amusante d'explorer cette magnifique région. Parfait pour les familles, couples et groupes d'amis qui cherchent une expérience unique.</p>
+                <div class="intro-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% écologique</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Technologie moderne</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-smile"></i>
+                        <span>Fun et accessible</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <span>Groupes bienvenus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOS TROTTINETTES -->
+    <section class="section-scooters">
+        <div class="container">
+            <h2>Nos Trottinettes</h2>
+            <div class="scooters-grid">
+                <div class="scooter-card fade-in">
+                    <div class="scooter-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <h3>Trottinette Standard</h3>
+                    <div class="scooter-specs">
+                        <p><i class="fas fa-battery-full"></i> <strong>Batterie :</strong> 40 km</p>
+                        <p><i class="fas fa-gauge-high"></i> <strong>Vitesse max :</strong> 25 km/h</p>
+                        <p><i class="fas fa-weight"></i> <strong>Capacité :</strong> 100 kg</p>
+                    </div>
+                    <p class="scooter-desc">Idéale pour les débutants et les balades tranquilles en famille</p>
+                </div>
+
+                <div class="scooter-card fade-in">
+                    <div class="scooter-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <h3>Trottinette Pro</h3>
+                    <div class="scooter-specs">
+                        <p><i class="fas fa-battery-full"></i> <strong>Batterie :</strong> 60 km</p>
+                        <p><i class="fas fa-gauge-high"></i> <strong>Vitesse max :</strong> 35 km/h</p>
+                        <p><i class="fas fa-weight"></i> <strong>Capacité :</strong> 120 kg</p>
+                    </div>
+                    <p class="scooter-desc">Pour les riders confirmés en quête de performance</p>
+                </div>
+
+                <div class="scooter-card fade-in">
+                    <div class="scooter-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Trottinette Enfants</h3>
+                    <div class="scooter-specs">
+                        <p><i class="fas fa-battery-full"></i> <strong>Batterie :</strong> 30 km</p>
+                        <p><i class="fas fa-gauge-high"></i> <strong>Vitesse max :</strong> 15 km/h</p>
+                        <p><i class="fas fa-weight"></i> <strong>Capacité :</strong> 60 kg</p>
+                    </div>
+                    <p class="scooter-desc">Sécurisée et ludique pour les enfants à partir de 8 ans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCOURS DISPONIBLES -->
+    <section class="section-routes">
+        <div class="container">
+            <h2>Nos Parcours Disponibles</h2>
+            <div class="routes-grid">
+                <div class="route-card fade-in">
+                    <div class="route-badge">Facile</div>
+                    <h3>Balade Nature - 8 km</h3>
+                    <div class="route-info">
+                        <span><i class="fas fa-clock"></i> 1h30</span>
+                        <span><i class="fas fa-chart-line"></i> Peu de pente</span>
+                    </div>
+                    <p>Une balade douce dans les villages pittoresques autour de Fontaine-de-Vaucluse. Parfait pour les familles avec enfants.</p>
+                    <ul class="route-highlights">
+                        <li>Villages typiques provençaux</li>
+                        <li>Routes bien balisées</li>
+                        <li>Pauses photo régulières</li>
+                        <li>Points d'intérêt locaux</li>
+                    </ul>
+                    <div class="route-price"><strong>20 €</strong> par personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+
+                <div class="route-card fade-in">
+                    <div class="route-badge">Moyen</div>
+                    <h3>Panorama Vaucluse - 15 km</h3>
+                    <div class="route-info">
+                        <span><i class="fas fa-clock"></i> 2h30</span>
+                        <span><i class="fas fa-chart-line"></i> Quelques pentes</span>
+                    </div>
+                    <p>Découvrez les points de vue spectaculaires et les paysages variés de Vaucluse. Une expérience complète et enrichissante.</p>
+                    <ul class="route-highlights">
+                        <li>Vues panoramiques exceptionnelles</li>
+                        <li>Découverte des vignobles</li>
+                        <li>Arrêts gourmands</li>
+                        <li>Paysages variés</li>
+                    </ul>
+                    <div class="route-price"><strong>28 €</strong> par personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+
+                <div class="route-card fade-in">
+                    <div class="route-badge">Aventure</div>
+                    <h3>Circuit Challenge - 25 km</h3>
+                    <div class="route-info">
+                        <span><i class="fas fa-clock"></i> 4h</span>
+                        <span><i class="fas fa-chart-line"></i> Terrain varié</span>
+                    </div>
+                    <p>Le circuit complet pour les riders confirmés. Défis variés, paysages époustouflants et aventure garantie!</p>
+                    <ul class="route-highlights">
+                        <li>Terrains variés et fun</li>
+                        <li>Défis techniques</li>
+                        <li>Paysages sauvages</li>
+                        <li>Déjeuner inclus</li>
+                    </ul>
+                    <div class="route-price"><strong>45 €</strong> par personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVANTAGES ÉCOLOGIQUES -->
+    <section class="section-eco">
+        <div class="container">
+            <h2>Nos Engagements Écologiques</h2>
+            <div class="eco-content">
+                <div class="eco-text">
+                    <h3>Voyagez Responsable</h3>
+                    <p>En choisissant la trottinette électrique, vous contribuez à préserver l'environnement de Fontaine-de-Vaucluse.</p>
+                    <ul class="eco-list">
+                        <li><i class="fas fa-leaf"></i> <strong>Zéro émission</strong> - Pas de CO2 pendant vos balades</li>
+                        <li><i class="fas fa-droplet"></i> <strong>Respectueux</strong> - Préservation de la nature locale</li>
+                        <li><i class="fas fa-bolt"></i> <strong>Durable</strong> - Énergie 100% renouvelable</li>
+                        <li><i class="fas fa-earth-europe"></i> <strong>Global</strong> - Réduction empreinte carbone collective</li>
+                    </ul>
+                </div>
+                <div class="eco-stats">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">450</div>
+                        <p>Tonnes de CO2 économisées annuellement</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">10k+</div>
+                        <p>Touristes responsables par an</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">95%</div>
+                        <p>De satisfaction clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLEAU TARIFAIRE -->
+    <section class="section-pricing">
+        <div class="container">
+            <h2>Nos Tarifs</h2>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parcours</th>
+                            <th>Distance</th>
+                            <th>Durée</th>
+                            <th>Tarif Unitaire</th>
+                            <th>Groupe (10+)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Balade Nature</strong></td>
+                            <td>8 km</td>
+                            <td>1h30</td>
+                            <td>20 €</td>
+                            <td>17 €</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Panorama Vaucluse</strong></td>
+                            <td>15 km</td>
+                            <td>2h30</td>
+                            <td>28 €</td>
+                            <td>24 €</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Circuit Challenge</strong></td>
+                            <td>25 km</td>
+                            <td>4h</td>
+                            <td>45 €</td>
+                            <td>38 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pricing-options">
+                <h3>Options Supplémentaires</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <i class="fas fa-camera"></i>
+                        <h4>Pack Photo</h4>
+                        <p>Photos professionnelles : +5 €</p>
+                    </div>
+                    <div class="option-item">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Pique-nique</h4>
+                        <p>Repas local inclus : +8 €</p>
+                    </div>
+                    <div class="option-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Assurance Premium</h4>
+                        <p>Protection complète : +3 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE TROTTINETTES -->
+    <section class="section-gallery">
+        <div class="container">
+            <h2>Moments de Plaisir</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <h3>Famille en Balade</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <h3>Coucher de Soleil</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Groupe d'Amis</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Point Vue Spectaculaire</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);"></div>
+                    <h3>Chemin Pittoresque</h3>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <h3>Aventure Électrique</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS -->
+    <section class="section-testimonials">
+        <div class="container">
+            <h2>Témoignages d'Utilisateurs</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">AF</div>
+                        <div class="review-info">
+                            <h4>Alice Fournier</h4>
+                            <p>Touriste - Marseille</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Quelle aventure ! C'était mon premier tour en trottinette électrique et j'ai adoré. À refaire sans hésiter !"</p>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">MR</div>
+                        <div class="review-info">
+                            <h4>Marc Rivière</h4>
+                            <p>Groupe - Avignon</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Parfait pour les groupes ! Les tarifs sont justes et l'expérience inoubliable. Merci à toute l'équipe."</p>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">NB</div>
+                        <div class="review-info">
+                            <h4>Nathalie Blanc</h4>
+                            <p>Couple - Lyon</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Écologique et amusant ! Nous avons particulièrement apprécié les paysages et le respect de la nature."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SÉCURITÉ -->
+    <section class="section-safety">
+        <div class="container">
+            <h2>Sécurité et Équipement</h2>
+            <div class="safety-grid">
+                <div class="safety-item fade-in">
+                    <div class="safety-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i class="fas fa-helmet-safety"></i></div>
+                    <h3>Casques Fournis</h3>
+                    <p>Casques certifiés pour tous les âges, obligatoires</p>
+                </div>
+                <div class="safety-item fade-in">
+                    <div class="safety-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><i class="fas fa-badge-check"></i></div>
+                    <h3>Assurance Incluse</h3>
+                    <p>Couverture complète pendant toute l'activité</p>
+                </div>
+                <div class="safety-item fade-in">
+                    <div class="safety-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i class="fas fa-person-hiking"></i></div>
+                    <h3>Guides Experts</h3>
+                    <p>Accompagnement professionnel et conseils de sécurité</p>
+                </div>
+                <div class="safety-item fade-in">
+                    <div class="safety-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i class="fas fa-toolbox"></i></div>
+                    <h3>Équipement Top</h3>
+                    <p>Trottinettes modernes, bien entretenues et fiables</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <div class="container">
+            <h2>Prêt à découvrir Fontaine-de-Vaucluse ?</h2>
+            <p>Explorez la région de manière écologique et ludique</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Réserver une trottinette</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AquaVenture Provence</h4>
+                    <p>Vivez l'aventure au fil de l'eau !</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Activités</h4>
+                    <ul>
+                        <li><a href="kayak.html">Kayak</a></li>
+                        <li><a href="trottinettes.html">Trottinettes</a></li>
+                        <li><a href="contact.html">Réservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)4 90 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@aquaventure.fr</p>
+                    <p><i class="fas fa-map-marker"></i> Fontaine-de-Vaucluse, France</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AquaVenture Provence. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

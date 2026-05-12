@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balades en Kayak - AquaVenture Provence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230066cc'/%3E%3Cpath d='M30 50 Q50 30 70 50' stroke='white' stroke-width='3' fill='none'/%3E%3Cpath d='M25 60 Q50 40 75 60' stroke='%2300a3ff' stroke-width='2' fill='none'/%3E%3Ctext x='50' y='75' text-anchor='middle' fill='white' font-size='20' font-weight='bold'%3EAV%3C/text%3E%3C/svg%3E" alt="Logo AquaVenture" class="logo">
+                <span class="brand-name">AquaVenture</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="kayak.html" class="active">Kayak</a></li>
+                <li><a href="trottinettes.html">Trottinettes</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <h1>Balades en Kayak</h1>
+            <p>Explorez les eaux cristallines de Fontaine-de-Vaucluse</p>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="section-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>L'Expérience Kayak Idéale</h2>
+                <p>Plongez dans une aventure aquatique inoubliable sur les eaux calmes et cristallines de Fontaine-de-Vaucluse. Nos guides expérimentés vous feront découvrir les secrets cachés de cette région naturelle exceptionnelle.</p>
+                <div class="intro-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Matériel professionnel fourni</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Guides certifiés</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Paysages naturels spectaculaires</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Activité accessible à tous</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section-programs">
+        <div class="container">
+            <h2>Nos Parcours Disponibles</h2>
+            <div class="programs-grid">
+                <!-- Parcours 1 -->
+                <div class="program-card fade-in">
+                    <div class="program-level" style="background: #90EE90;">Débutant</div>
+                    <h3>Parcours Familial</h3>
+                    <div class="program-meta">
+                        <span><i class="fas fa-clock"></i> 2 heures</span>
+                        <span><i class="fas fa-users"></i> Tous les âges</span>
+                    </div>
+                    <div class="program-description">
+                        <p>Une balade douce et facile, parfaite pour découvrir le cadre naturel sans effort.</p>
+                        <ul>
+                            <li>Parcours calme et sécurisé</li>
+                            <li>Distance : 4 km</li>
+                            <li>Observation de la nature</li>
+                            <li>Pauses régulières</li>
+                        </ul>
+                    </div>
+                    <div class="program-price">À partir de <strong>25 €</strong>/personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+
+                <!-- Parcours 2 -->
+                <div class="program-card fade-in">
+                    <div class="program-level" style="background: #FFD700;">Intermédiaire</div>
+                    <h3>Formule Après-Midi</h3>
+                    <div class="program-meta">
+                        <span><i class="fas fa-clock"></i> 2h30</span>
+                        <span><i class="fas fa-users"></i> À partir de 10 ans</span>
+                    </div>
+                    <div class="program-description">
+                        <p>Notre formule star ! Kayak, équipement et goûter local inclus.</p>
+                        <ul>
+                            <li>Kayak professionnel</li>
+                            <li>Gilet de sauvetage compris</li>
+                            <li>Goûter local offert</li>
+                            <li>Distance : 6 km</li>
+                        </ul>
+                    </div>
+                    <div class="program-price">À partir de <strong>28 €</strong>/personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+
+                <!-- Parcours 3 -->
+                <div class="program-card fade-in">
+                    <div class="program-level" style="background: #FF6347;">Avancé</div>
+                    <h3>Parcours Aventure</h3>
+                    <div class="program-meta">
+                        <span><i class="fas fa-clock"></i> 4 heures</span>
+                        <span><i class="fas fa-users"></i> À partir de 14 ans</span>
+                    </div>
+                    <div class="program-description">
+                        <p>Pour les amateurs de sensations fortes et paysages époustouflants.</p>
+                        <ul>
+                            <li>Parcours complet et varié</li>
+                            <li>Distance : 10 km</li>
+                            <li>Points de vue remarquables</li>
+                            <li>Déjeuner inclus</li>
+                        </ul>
+                    </div>
+                    <div class="program-price">À partir de <strong>45 €</strong>/personne</div>
+                    <a href="contact.html" class="btn btn-secondary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORAIRES -->
+    <section class="section-schedules">
+        <div class="container">
+            <h2>Horaires et Départs</h2>
+            <div class="schedules-grid">
+                <div class="schedule-card fade-in">
+                    <h3><i class="fas fa-sun"></i> Matin</h3>
+                    <p><strong>09:00</strong> - Départ premier groupe</p>
+                    <p><strong>10:00</strong> - Départ deuxième groupe</p>
+                    <p class="schedule-note">Petit-déjeuner avant l'activité</p>
+                </div>
+                <div class="schedule-card fade-in">
+                    <h3><i class="fas fa-cloud-sun"></i> Après-midi</h3>
+                    <p><strong>14:00</strong> - Départ premier groupe</p>
+                    <p><strong>15:30</strong> - Départ deuxième groupe</p>
+                    <p class="schedule-note">Goûter local inclus</p>
+                </div>
+                <div class="schedule-card fade-in">
+                    <h3><i class="fas fa-moon"></i> Coucher de Soleil</h3>
+                    <p><strong>18:00</strong> - Départ unique</p>
+                    <p><strong>Moment magique</strong></p>
+                    <p class="schedule-note">Sur réservation (weekends)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MATÉRIEL FOURNI -->
+    <section class="section-equipment">
+        <div class="container">
+            <h2>Matériel Professionnel Fourni</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item fade-in">
+                    <div class="equipment-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i class="fas fa-water"></i></div>
+                    <h3>Kayaks</h3>
+                    <p>Kayaks modernes et confortables, adaptés à tous les niveaux</p>
+                </div>
+                <div class="equipment-item fade-in">
+                    <div class="equipment-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Gilets de Sauvetage</h3>
+                    <p>Équipement de sécurité certifié pour tous les âges</p>
+                </div>
+                <div class="equipment-item fade-in">
+                    <div class="equipment-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i class="fas fa-oars"></i></div>
+                    <h3>Pagaies</h3>
+                    <p>Pagaies professionnelles, légères et maniables</p>
+                </div>
+                <div class="equipment-item fade-in">
+                    <div class="equipment-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i class="fas fa-gopuram"></i></div>
+                    <h3>Accessoires</h3>
+                    <p>Sacs étanches, cordages, et équipements de secours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section class="section-pricing">
+        <div class="container">
+            <h2>Tableau Tarifaire</h2>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activité</th>
+                            <th>Durée</th>
+                            <th>Distance</th>
+                            <th>Enfant (-12 ans)</th>
+                            <th>Adulte</th>
+                            <th>Groupe (10+)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Parcours Familial</strong></td>
+                            <td>2h</td>
+                            <td>4 km</td>
+                            <td>18 €</td>
+                            <td>25 €</td>
+                            <td>20 €</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Formule Après-Midi</strong></td>
+                            <td>2h30</td>
+                            <td>6 km</td>
+                            <td>22 €</td>
+                            <td>28 €</td>
+                            <td>24 €</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Parcours Aventure</strong></td>
+                            <td>4h</td>
+                            <td>10 km</td>
+                            <td>35 €</td>
+                            <td>45 €</td>
+                            <td>38 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pricing-info">
+                <p><i class="fas fa-info-circle"></i> <strong>Inclus dans tous les tarifs :</strong> Équipement complet, guide professionnel, assurance, et pause photo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSEILS DE SÉCURITÉ -->
+    <section class="section-safety">
+        <div class="container">
+            <h2>Conseils de Sécurité</h2>
+            <div class="safety-grid">
+                <div class="safety-card fade-in">
+                    <div class="safety-number">1</div>
+                    <h3>Avant de partir</h3>
+                    <ul>
+                        <li>Vérifier la météo et l'état des eaux</li>
+                        <li>Prévoir des vêtements adaptés</li>
+                        <li>Apporter de l'eau et une protection solaire</li>
+                    </ul>
+                </div>
+                <div class="safety-card fade-in">
+                    <div class="safety-number">2</div>
+                    <h3>Pendant l'activité</h3>
+                    <ul>
+                        <li>Porter obligatoirement le gilet de sauvetage</li>
+                        <li>Respecter les consignes du guide</li>
+                        <li>Rester groupé avec d'autres kayakistes</li>
+                    </ul>
+                </div>
+                <div class="safety-card fade-in">
+                    <div class="safety-number">3</div>
+                    <h3>Compétences minimales</h3>
+                    <ul>
+                        <li>Savoir nager (sauf enfants accompagnés)</li>
+                        <li>Être en bonne condition physique</li>
+                        <li>Avoir confiance en soi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAYSAGES SPECTACULAIRES -->
+    <section class="section-landscapes">
+        <div class="container">
+            <h2>Paysages Naturels</h2>
+            <div class="landscapes-grid">
+                <div class="landscape-item fade-in">
+                    <div class="landscape-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Eaux Cristallines</h3>
+                    <p>Les eaux pures et transparentes de Fontaine-de-Vaucluse offrent une visibilité exceptionnelle</p>
+                </div>
+                <div class="landscape-item fade-in">
+                    <div class="landscape-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Falaises Calcaires</h3>
+                    <p>Sculptures naturelles qui dominent le paysage avec majesté et beauté</p>
+                </div>
+                <div class="landscape-item fade-in">
+                    <div class="landscape-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Végétation Luxuriante</h3>
+                    <p>Une flore variée qui borde les rives du paysage aquatique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS -->
+    <section class="section-reviews">
+        <div class="container">
+            <h2>Avis de nos Kayakistes</h2>
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">JM</div>
+                        <div class="review-info">
+                            <h4>Jean Martin</h4>
+                            <p>Famille - 4 personnes</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"L'équipe était incroyable ! Les enfants ont adoré et les guides sont vraiment compétents. À refaire absolument !"</p>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">EC</div>
+                        <div class="review-info">
+                            <h4>Emma Collet</h4>
+                            <p>Solo - 1 personne</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Paysages magnifiques, équipement moderne et une ambiance conviviale. Une vraie bulle de nature !"</p>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">TP</div>
+                        <div class="review-info">
+                            <h4>Thomas Petit</h4>
+                            <p>Groupe - 12 personnes</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Parfait pour les groupes ! Bien organisé, tarifs intéressants et une expérience qu'on n'oubliera pas."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <h2>Prêt pour une balade en kayak ?</h2>
+            <p>Réservez maintenant et explorez Fontaine-de-Vaucluse comme jamais</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AquaVenture Provence</h4>
+                    <p>Vivez l'aventure au fil de l'eau !</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Activités</h4>
+                    <ul>
+                        <li><a href="kayak.html">Kayak</a></li>
+                        <li><a href="trottinettes.html">Trottinettes</a></li>
+                        <li><a href="contact.html">Réservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)4 90 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@aquaventure.fr</p>
+                    <p><i class="fas fa-map-marker"></i> Fontaine-de-Vaucluse, France</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AquaVenture Provence. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
