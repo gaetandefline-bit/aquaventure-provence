@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Réservation - AquaVenture Provence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230066cc'/%3E%3Cpath d='M30 50 Q50 30 70 50' stroke='white' stroke-width='3' fill='none'/%3E%3Cpath d='M25 60 Q50 40 75 60' stroke='%2300a3ff' stroke-width='2' fill='none'/%3E%3Ctext x='50' y='75' text-anchor='middle' fill='white' font-size='20' font-weight='bold'%3EAV%3C/text%3E%3C/svg%3E" alt="Logo AquaVenture" class="logo">
+                <span class="brand-name">AquaVenture</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="kayak.html">Kayak</a></li>
+                <li><a href="trottinettes.html">Trottinettes</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+        <div class="container">
+            <h1>Contact & Réservation</h1>
+            <p>Prenez contact avec nous pour réserver vos activités</p>
+        </div>
+    </section>
+
+    <!-- INFOS CONTACT -->
+    <section class="section-contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i class="fas fa-phone"></i></div>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+33490123456">+33 (0)4 90 12 34 56</a></p>
+                    <p class="contact-note">Disponible du lundi au dimanche</p>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@aquaventure.fr">contact@aquaventure.fr</a></p>
+                    <p class="contact-note">Réponse en moins de 2 heures</p>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><i class="fas fa-map-marker"></i></div>
+                    <h3>Adresse</h3>
+                    <p>Route de la Fontaine<br>84800 Fontaine-de-Vaucluse<br>France</p>
+                    <p class="contact-note">Parking gratuit sur place</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORAIRES D'OUVERTURE -->
+    <section class="section-hours">
+        <div class="container">
+            <h2>Horaires d'Ouverture</h2>
+            <div class="hours-grid">
+                <div class="hours-card fade-in">
+                    <h3>Haute Saison (Mai-Septembre)</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td><strong>Lundi - Vendredi :</strong></td>
+                            <td>08:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Samedi :</strong></td>
+                            <td>07:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dimanche :</strong></td>
+                            <td>07:00 - 19:00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="hours-card fade-in">
+                    <h3>Basse Saison (Octobre-Avril)</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td><strong>Lundi - Vendredi :</strong></td>
+                            <td>09:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Samedi :</strong></td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dimanche :</strong></td>
+                            <td>09:00 - 17:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="closed-note">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>Fermé</strong> : 1er janvier, 1er mai, 14 juillet, 1er novembre, 25 décembre</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section class="section-form">
+        <div class="container">
+            <h2>Formulaire de Réservation</h2>
+            <div class="form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+33 6 XX XX XX XX">
+                        </div>
+                        <div class="form-group">
+                            <label for="activity">Activité souhaitée *</label>
+                            <select id="activity" name="activity" required>
+                                <option value="">-- Sélectionnez une activité --</option>
+                                <option value="kayak">Balade en Kayak</option>
+                                <option value="trottinette">Trottinette Électrique</option>
+                                <option value="groupe">Formule Groupe</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date souhaitée *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="participants">Nombre de participants *</label>
+                            <input type="number" id="participants" name="participants" min="1" max="50" required placeholder="Ex: 4">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Posez vos questions ou précisez vos besoins..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">M'abonner à la newsletter AquaVenture</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Envoyer ma réservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTE -->
+    <section class="section-map">
+        <div class="container">
+            <h2>Nous Trouver</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.7545905932697!2d5.332893315915844!3d43.908226570947516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c8f8a0f0f0f0f1%3A0xf0f0f0f0f0f0f0f0!2sFontaine-de-Vaucluse!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-faq">
+        <div class="container">
+            <h2>Questions Fréquemment Posées</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Faut-il savoir nager ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Pour les balades en kayak, il est recommandé de savoir nager, mais ce n'est pas obligatoire si vous portez le gilet de sauvetage (fourni et obligatoire). Pour les enfants, ils doivent être accompagnés d'un adulte. Contactez-nous pour les adaptations spéciales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Peut-on venir en groupe ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Absolument ! Nous adorons les groupes. Des réductions de 10-15% sont appliquées pour les groupes de 10+ personnes. Pour les groupes de plus de 20 personnes, nous pouvons organiser des formules spéciales. N'hésitez pas à nous contacter pour un devis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Y a-t-il un âge minimum ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Pour le kayak : enfants à partir de 5 ans accompagnés d'un adulte. Pour les trottinettes : enfants à partir de 8 ans. Nous avons des équipements adaptés pour tous les âges. Les personnes seniors sont aussi bienvenues avec nos programmes adaptés.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Quelle est la politique d'annulation ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Annulation gratuite jusqu'à 48h avant l'activité. Entre 48h et 24h : remboursement de 50%. Moins de 24h : pas de remboursement sauf en cas de mauvais temps extrême. Les reportages sur une autre date sont toujours possibles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Quel est le météo idéale pour visiter ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Nous fonctionnons avec pratiquement toutes les météos ! L'été (juin-septembre) est la haute saison avec des journées chaudes et ensoleillées. Le printemps et l'automne offrent des conditions idéales avec moins de touristes. Seules les tempetes extrêmes peuvent affecter les activités.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-header" onclick="toggleFAQ(this)">
+                        <h3>Y a-t-il des tarifs réduits ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Oui ! Réductions enfants : -30% pour les moins de 12 ans. Groupes (10+) : -10% à -15%. Étudiants/Séniors : -15% sur présentation d'une pièce d'identité. Familles : packages spéciaux. Demandez notre tarif groupe personnalisé !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSEAUX SOCIAUX -->
+    <section class="section-social-contact">
+        <div class="container">
+            <h2>Suivez-nous sur les Réseaux Sociaux</h2>
+            <p>Retrouvez nos dernières photos et actualités</p>
+            <div class="social-buttons">
+                <a href="https://facebook.com/aquaventureprovence" class="social-btn facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com/aquaventureprovence" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://youtube.com/@aquaventureprovence" class="social-btn youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://tripadvisor.com/aquaventureprovence" class="social-btn tripadvisor">
+                    <i class="fab fa-tripadvisor"></i>
+                    <span>TripAdvisor</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+        <div class="container">
+            <h2>Prêt à réserver ?</h2>
+            <p>Profitez de nos activités exceptionnelles dès maintenant</p>
+            <a href="#contactForm" class="btn btn-primary btn-large">Remplir le formulaire</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AquaVenture Provence</h4>
+                    <p>Vivez l'aventure au fil de l'eau !</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Activités</h4>
+                    <ul>
+                        <li><a href="kayak.html">Kayak</a></li>
+                        <li><a href="trottinettes.html">Trottinettes</a></li>
+                        <li><a href="contact.html">Réservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)4 90 12 34 56</p>
+                    <p><i class="fas fa-envelope"></i> contact@aquaventure.fr</p>
+                    <p><i class="fas fa-map-marker"></i> Fontaine-de-Vaucluse, France</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AquaVenture Provence. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
